@@ -16,35 +16,37 @@
 			<input type="password" name="pass" value="" placeholder="password">
 			<input type="button" onclick="overlay();" name="submit" value="LOGIN">
 		</form> -->
-		<div class="login-form autoris">
-        <h1>Sign In</h1>
-        <fieldset>
-            <form action="javascript:void(0);" method="get">
-                <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' ">
-                <input type="password" required value="Pass" onBlur="if(this.value=='')this.value='Pass'" onFocus="if(this.value=='Pass')this.value='' ">
-                <input type="submit" value="LOGIN">
-            </form>
-        </fieldset>
-    	</div>
-    	<div class="login-form">
-        <h1>Registration</h1>
-        <fieldset>
-            <form action="javascript:void(0);" method="get">
-                <input type="email" required value="Email" onBlur="if(this.value=='')this.value='Email'" onFocus="if(this.value=='Email')this.value='' ">
-                <input type="email" required value="Email check" onBlur="if(this.value=='')this.value='Email check'" onFocus="if(this.value=='Email check')this.value='' ">
-                <input type="password" required value="Pass" onBlur="if(this.value=='')this.value='Pass'" onFocus="if(this.value=='Pass')this.value='' ">
-                <input type="submit" value="SUBMIT">
-            </form>
-        </fieldset>
-		</div>
+		
 	</header>
 	<aside class="ui-layout-west left">Left sidebar</aside>
 	<div class="ui-layout-center ui-widget-content content">Content</div>
 	<aside  class="ui-layout-east right">Right sidebar</aside>
 	<footer class="ui-layout-south ui-widget-header ">Footer</footer>
 
-	<div class="overlay" id="over"> 
-		
+	<div class="overlay" id="over">
+		<div class="forms"> 
+		<div class="login-form autoris">
+        <h1>Sign In</h1>
+        <fieldset>
+            <form action="javascript:void(0);" method="get" name="SignIn">
+                <input type="email" required placeholder="email" value="">
+                <input type="password" required placeholder="password" value="">
+                <input type="submit" value="LOGIN" name="submit" onclick="overlay();">
+            </form>
+        </fieldset>
+    	</div>
+    	<div class="login-form">
+        <h1>Registration</h1>
+        <fieldset>
+            <form action="javascript:void(0);" method="get" name="Registration">
+                <input type="email" required placeholder="email" value="">
+                <input type="email" required placeholder="email" value="">
+                <input type="password" required placeholder="password" value="">
+                <input type="submit" value="SUBMIT" name="submit" onclick="overlay();">
+            </form>
+        </fieldset>
+		</div>
+		</div>
 	</div>
 	
 	<script src="js/jquery-1.11.2.min.js"></script>
