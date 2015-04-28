@@ -3,14 +3,14 @@ body{
 }
 header{
 	/*background: #C08E8F;*/
-	height: 200px !important;
+	height: 100px !important;
 	border: 1px solid #e78f08 !important;
   	background: #f6a828 url("../js/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x !important; 
 	width: 100%;
 }
 footer{
 	/*background: #C08E8F;*/
-	height: 80px !important;
+	height: 100px !important;
 	border: 1px solid #e78f08 !important;
   	background: #f6a828 url("../js/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x !important; 
 }
@@ -119,7 +119,7 @@ div.autoris{
 	border-top: none;
 	border-radius: 0px 0px 3px 3px;
 }
-.login-form input[type="submit"] {
+.login-form input[type="button"] {
 	background: #8FB5C0;
 	border-radius: 3px;
 	color: #fff;
@@ -130,10 +130,10 @@ div.autoris{
 	border: none;
 	cursor: pointer;
 }
-.autoris input[type="submit"]{
+.autoris input[type="button"]{
 	margin-top: 62px;
 }
-.login-form input[type="submit"]:hover { 
+.login-form input[type="button"]:hover { 
 	background: #6DB1C5; 
 }
 /* end forms */
