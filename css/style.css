@@ -1,0 +1,26 @@
+body{
+	height: 100%;
+}
+header{
+	/*background: #C08E8F;*/
+	height: 80px !important;
+	border: 1px solid #e78f08 !important;
+  	background: #f6a828 url("../js/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x !important; 
+}
+footer{
+	/*background: #C08E8F;*/
+	height: 80px !important;
+	border: 1px solid #e78f08 !important;
+  	background: #f6a828 url("../js/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x !important; 
+}
+.left{
+	background: #8FB5C0 !important;
+}
+.right{
+	background: #8FB5C0 !important;
+}
+.content{
+	border: 1px solid #dddddd !important;
+  	background: #eeeeee url("../js/jquery-ui-1.11.4/images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x !important;
+	/*background: #B48EBF;*/
+}
