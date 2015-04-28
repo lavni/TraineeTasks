@@ -3,9 +3,10 @@ body{
 }
 header{
 	/*background: #C08E8F;*/
-	height: 80px !important;
+	height: 200px !important;
 	border: 1px solid #e78f08 !important;
   	background: #f6a828 url("../js/jquery-ui-1.11.4/images/ui-bg_gloss-wave_35_f6a828_500x100.png") 50% 50% repeat-x !important; 
+	width: 100%;
 }
 footer{
 	/*background: #C08E8F;*/
@@ -24,3 +25,91 @@ footer{
   	background: #eeeeee url("../js/jquery-ui-1.11.4/images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x !important;
 	/*background: #B48EBF;*/
 }
+/*.form-login{
+	position: absolute;
+	width: 200px;
+	right: 0;
+}*/
+
+/*form*/
+.login-form {
+	width: 200px;
+	position: absolute;
+	top:5px;
+	right: 10px;
+}
+div.autoris{
+	right: 210px;
+}
+.login-form h1 {
+	background-color: #282830;
+	border-radius: 0 5px 0 0;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 100;
+}
+.autoris h1 {
+	border-radius: 5px 0 0 0;
+}
+.login-form fieldset {
+	background: rgba(255,255,255, 0.2);
+	border-radius: 0 0 5px 0;
+	padding: 10px;
+	position: relative;
+}
+.autoris fieldset {
+	border-radius: 0 0 0 5px;
+}
+.login-form fieldset:before {
+	background-color: #000;
+	content: "";
+	height: 8px;
+	left: 50%;
+	margin: -4px 0 0 -4px;
+	position: absolute;
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 8px;
+	overflow: hidden;
+}
+.login-form input {
+	font-size: 12px;
+}
+.login-form input[type="email"],
+.login-form input[type="password"] {
+	border: 1px solid #dcdcdc;
+	padding: 6px 10px;
+	width: 138px;
+}
+.login-form input[type="email"] {
+	border-radius: 3px 3px 0 0;
+}
+.login-form input[type="password"] {
+	border-top: none;
+	border-radius: 0px 0px 3px 3px;
+}
+.login-form input[type="submit"] {
+	background: #8FB5C0;
+	border-radius: 3px;
+	color: #fff;
+	float: right;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+.autoris input[type="submit"]{
+	margin-bottom: 28px;
+}
+.login-form input[type="submit"]:hover { 
+	background: #6DB1C5; 
+}
+/* end form */
