@@ -62,7 +62,7 @@ footer{
 	top: 0;
 	right: 0;
 }
-div.autoris{
+#autoris{
 	right: 300px;
 }
 .login-form h1 {
@@ -75,7 +75,7 @@ div.autoris{
 	text-transform: uppercase;
 	/*z-index: 100;*/
 }
-.autoris h1 {
+#autoris h1 {
 	border-radius: 5px 0 0 0;
 }
 .login-form fieldset {
@@ -84,7 +84,7 @@ div.autoris{
 	padding: 20px;
 	position: relative;
 }
-.autoris fieldset {
+#autoris fieldset {
 	border-radius: 0 0 0 5px;
 }
 .login-form fieldset:before {
@@ -130,13 +130,24 @@ div.autoris{
 	border: none;
 	cursor: pointer;
 }
-.autoris input[type="button"]{
+#autoris input[type="button"]{
 	margin-top: 62px;
 }
 .login-form input[type="button"]:hover { 
 	background: #6DB1C5; 
 }
 /* end forms */
+
 .none{
 	display: none;
+}
+#hello{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: #282830;
+	color: #fff;
+	padding: 10px;
+	box-shadow: 0px 0px 2px 1px #544026;
+	text-transform: uppercase;
 }
