@@ -16,7 +16,7 @@ function overlay(login){
 }
 
 function signIn(){
-	var vals = sessionStorage();
+	var vals = localStorage();
 	// var login = $('#autoris input[type=email]').val();
 	// var pass= $('#autoris input[type=password]').val();
 	var ok = false;
@@ -36,7 +36,7 @@ function signIn(){
 }
 
 function register(){
-	var vals = sessionStorage();
+	var vals = localStorage();
 	// var login1 = $('#register input[type=email]:eq(0)').val();
 	// var login2 = $('#register input[type=email]:eq(1)').val();
 	// var pass1 = $('#register input[type=password]').val();
@@ -82,21 +82,20 @@ function register(){
 		$('#register input[type=password]').val('');
 	}
 }
-function sessionStorage(){
+function localStorage(){
 	if(typeof(Storage) !== "undefined") {
-    	console.log('1');
-    	function register(){}
-    	sessionStorage.login = $('#autoris input[type=email]').val();
-    	sessionStorage.pass = $('#autoris input[type=password]').val();
-    	sessionStorage.login1 = $('#register input[type=email]:eq(0)').val();
-    	sessionStorage.login2 = $('#register input[type=email]:eq(1)').val();
-    	sessionStorage.pass1 = $('#register input[type=password]').val();
+    	// console.log('1');
+    	localStorage.login = $('#autoris input[type=email]').val();
+    	localStorage.pass = $('#autoris input[type=password]').val();
+    	localStorage.login1 = $('#register input[type=email]:eq(0)').val();
+    	localStorage.login2 = $('#register input[type=email]:eq(1)').val();
+    	localStorage.pass1 = $('#register input[type=password]').val();
     	return [
-    	sessionStorage.login, 
-    	sessionStorage.pass, 
-    	sessionStorage.login1, 
-    	sessionStorage.login2, 
-    	sessionStorage.pass1
+    	localStorage.login, 
+    	localStorage.pass, 
+    	localStorage.login1, 
+    	localStorage.login2, 
+    	localStorage.pass1
     	];
 	} else {
     	alert('Sorry! No Web Storage support..');

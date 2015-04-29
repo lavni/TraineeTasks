@@ -105,6 +105,7 @@ footer{
 }
 .login-form input {
 	font-size: 14px;
+	box-shadow: none;
 }
 .login-form input[type="email"],
 .login-form input[type="password"] {
