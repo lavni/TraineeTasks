@@ -36,7 +36,6 @@ footer{
 	left: 0;
 	background: rgba(0,0,0,0.9) url(../images/bg.png) repeat;
 	z-index: 10;
-	/*display: none;*/
 }
 .overlay #header{
 	position: absolute;
@@ -52,12 +51,9 @@ footer{
 	right: 0;
 	float: right;
 	font-size: 0px;
-	/*width:auto;*/
 }
 .homeNav ul li{
 	display: inline-block;
-	
-	/*cursor: pointer;*/
 }
 .homeNav ul li a{
 	display: inline-block;
@@ -78,11 +74,15 @@ footer{
   	width: 300px; 
   	margin: 0 auto; 
 }
-/*.ui-dialog-titlebar{
-	z-index: 100;
-}*/
+.ui-dialog-titlebar{
+	height:30px;
+	background: #282830;
+	border: none;
+	border-radius: 5px 5px 0 0;
+}
 .forms{
 	text-align: center;
+	margin-top:-5px;
 }
 .login-form {
 	width: 300px;
@@ -98,10 +98,9 @@ footer{
 	border-radius: 0 5px 0 0;
 	color: #fff;
 	font-size: 14px;
-	padding: 20px;
+	padding: 0 0 20px;
 	text-align: center;
 	text-transform: uppercase;
-	/*z-index: 100;*/
 }
 #autoris h1 {
 	border-radius: 5px 0 0 0;

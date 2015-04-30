@@ -5,7 +5,7 @@ $( "#button" ).button();
 $( "#dialog" ).dialog({
 	autoOpen: false,
 	modal: true,
-	height: 325,
+	height: 295,
 	width: 610
 });
 $('#opener').on('click', function(){
@@ -24,10 +24,6 @@ function overlay(login){
 	$('header #hello').text('HELLO ' + name +'!');
 	$('.overlay').addClass('none');
 }
-
-
-
-
 
 function login(){
 	var vals = localStorage();
