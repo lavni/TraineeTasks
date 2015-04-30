@@ -1,6 +1,16 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 	$('body').layout({ applyDemoStyles: true });
+// });
+$( "#button" ).button();
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	modal: true,
+	height: 325,
+	width: 610
 });
+$('#opener').on('click', function(){
+	$( "#dialog" ).dialog( "open" );
+})
 
 var users=[
 {email: 'tom@mail.ru', password: '123'},
@@ -8,17 +18,19 @@ var users=[
 {email: 'john@mail.ru', password: '123'}];
 
 function overlay(login){
+	$( "#dialog" ).dialog( "close" );
 	var ind = login.indexOf("@")
 	var name = login.substring(0, ind);
 	$('header #hello').text('HELLO ' + name +'!');
 	$('.overlay').addClass('none');
-
 }
 
-function signIn(){
+
+
+
+
+function login(){
 	var vals = localStorage();
-	// var login = $('#autoris input[type=email]').val();
-	// var pass= $('#autoris input[type=password]').val();
 	var ok = false;
 	for (var i=0; i<users.length; i++){
 	 	if (users[i].email === vals[0]) { 
@@ -37,9 +49,6 @@ function signIn(){
 
 function register(){
 	var vals = localStorage();
-	// var login1 = $('#register input[type=email]:eq(0)').val();
-	// var login2 = $('#register input[type=email]:eq(1)').val();
-	// var pass1 = $('#register input[type=password]').val();
 	var ok = true;
 	function validateEmail(email) {
     	var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -80,6 +89,7 @@ function register(){
 		$('#register input[type=email]:eq(0)').val('');
 		$('#register input[type=email]:eq(1)').val('');
 		$('#register input[type=password]').val('');
+		$( "#dialog" ).dialog( "close" );
 	}
 }
 function localStorage(){

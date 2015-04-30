@@ -11,7 +11,7 @@
 <body class="ui-widget">
 	<header class="ui-layout-north ui-widget-header ">
 		Header
-		<div id="hello"></div>		
+		<div id="hello"></div>
 	</header>
 	<aside class="ui-layout-west left">Left sidebar</aside>
 	<div class="ui-layout-center ui-widget-content content">Content</div>
@@ -19,33 +19,46 @@
 	<footer class="ui-layout-south ui-widget-header ">Footer</footer>
 
 	<div class="overlay" id="over">
-		<div class="forms"> 
-		<div class="login-form" id="autoris">
-        <h1>Sign In</h1>
-        <fieldset>
-            <form action="#" method="get" name="SignIn">
-                <input type="email" required placeholder="email" value="tom@mail.ru" autocomplete="on">
-                <input type="password" required placeholder="password" value="123">
-                <input type="button" value="LOGIN" name="submit" onclick="signIn();">
-            </form>
-        </fieldset>
-    	</div>
-    	<div class="login-form" id="register">
-        <h1>Register</h1>
-        <fieldset>
-            <form action="#" method="get" name="Registration">
-                <input type="email" required placeholder="email" value="" autocomplete="on">
-                <input type="email" required placeholder="email" value="">
-                <input type="password" required placeholder="password" value="">
-                <input type="button" value="SUBMIT" name="submit" onclick="register();">
-            </form>
-        </fieldset>
+		<div id="header">
+			<nav class="homeNav">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contacts</a></li>
+					<li><a href="#" id="opener">Login/register</a></li>
+				</ul>
+			</nav>
 		</div>
-		</div>
+		<div id="welcome">Welcome!</div>
+		
 	</div>
 	
-	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	<div class="forms" id="dialog" title=""> 
+		<div class="login-form" id="autoris">
+	        <h1>Login</h1>
+	        <fieldset>
+	            <form action="#" method="get" name="Login">
+	                <input type="email" required placeholder="email" value="tom@mail.ru">
+	                <input type="password" required placeholder="password" value="123">
+	                <input type="button" value="LOGIN" name="submit" onclick="login();">
+	            </form>
+	        </fieldset>
+	    	</div>
+	    	<div class="login-form" id="register">
+	        <h1>Register</h1>
+	        <fieldset>
+	            <form action="#" method="get" name="Registration">
+	                <input type="email" required placeholder="email" value="">
+	                <input type="email" required placeholder="email" value="">
+	                <input type="password" required placeholder="password" value="">
+	                <input type="button" value="SUBMIT" name="submit" onclick="register();">
+	            </form>
+	        </fieldset>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.2.js"></script>
+	<script src="js/jquery-ui-1.11.4/jquery-ui.js"></script>
 	<script src='js/stable-layout/jquery.layout.js'></script>
 	<script src='js/knockout-3.3.0.js'></script>
     <script src="js/script.js"></script>

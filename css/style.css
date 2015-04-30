@@ -25,11 +25,6 @@ footer{
   	background: #eeeeee url("../js/jquery-ui-1.11.4/images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x !important;
 	/*background: #B48EBF;*/
 }
-/*.form-login{
-	position: absolute;
-	width: 200px;
-	right: 0;
-}*/
 
 /*forms*/
 .overlay{
@@ -40,20 +35,53 @@ footer{
 	top: 0;
 	left: 0;
 	background: rgba(0,0,0,0.9) url(../images/bg.png) repeat;
-	z-index: 10000;
-	/*vertical-align: middle;*/
+	z-index: 10;
+	/*display: none;*/
 }
-.forms{
-	display: block;
-	z-index: 10000;
+.overlay #header{
 	position: absolute;
-	width: 600px;
-	padding:10px;
-	height: 300px;
-	left: 50%;
-	top: 50%;
-	margin-left: -305px;
-	margin-top: -155px;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #282830;
+	color:#fff;
+}
+.homeNav{
+	display: inline-block;
+	position: relative;
+	right: 0;
+	float: right;
+	font-size: 0px;
+	/*width:auto;*/
+}
+.homeNav ul li{
+	display: inline-block;
+	
+	/*cursor: pointer;*/
+}
+.homeNav ul li a{
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	color:#fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+.homeNav ul li a:hover{
+	color: #6DB1C5;
+}
+.overlay #welcome{
+	position: relative;
+	color: #000;
+	font-size: 4em;
+	top: 20%;
+  	width: 300px; 
+  	margin: 0 auto; 
+}
+/*.ui-dialog-titlebar{
+	z-index: 100;
+}*/
+.forms{
 	text-align: center;
 }
 .login-form {
@@ -142,7 +170,7 @@ footer{
 .none{
 	display: none;
 }
-#hello{
+header #hello{
 	position: absolute;
 	right: 10px;
 	top: 10px;
